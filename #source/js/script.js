@@ -202,7 +202,8 @@ new Splide( '.splide',{
     width: '1050px',
     height: '420px',
     fixedWidth: '320px',
-    fixedHeight: '410px'
+    fixedHeight: '410px',
+    pagination: false,
 } ).mount();
 
 //Бургер меню

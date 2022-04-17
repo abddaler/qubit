@@ -773,6 +773,9 @@ body.__lock{
         flex-wrap: wrap;
         &__block{
             align-items: center;
+            h2{
+                text-align: center;
+            }
         }
         >img{
             width: 100%;

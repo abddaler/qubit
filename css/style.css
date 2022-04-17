@@ -1014,6 +1014,9 @@ body.__lock {
         -ms-flex-align: center;
             align-items: center;
   }
+  .ecos-section-content__block h2 {
+    text-align: center;
+  }
   .ecos-section-content > img {
     width: 100%;
   }
