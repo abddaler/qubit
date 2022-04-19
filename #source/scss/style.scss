@@ -115,6 +115,8 @@ body.__lock{
            color:$col-4;
            font-size: 14px;
            line-height: 14px;
+           opacity: .7;
+	       transition: opacity .3s cubic-bezier(.51, .92, .24, 1);
            &::after {
             --scale: 0;
             content: '';
@@ -125,8 +127,11 @@ body.__lock{
             height: 3px;
             background: linear-gradient(135deg, $col-1, $col-2);
             transform: scaleX(var(--scale));
-            transform-origin: var(--x) 50%;
-            transition: transform .3s cubic-bezier(.51, .92, .24, 1);
+		    transform-origin: var(--x) 50%;
+		    transition: transform .3s cubic-bezier(.51, .92, .24, 1);
+	        }
+            &:hover {
+                opacity: 1;
             }
             &:hover::after {
                 --scale: 1;
@@ -682,6 +687,11 @@ body.__lock{
                         font-size: 14px;
                         line-height: 18px;
                         color: #FFFFFF;
+                        opacity: .7;
+                        transition: opacity .3s cubic-bezier(.51, .92, .24, 1);
+                        &:hover{
+                        opacity: 1;
+                        }
                     }
                 }
             }
@@ -802,3 +812,4 @@ body.__lock{
         width: 170px;
     }
 }
+    

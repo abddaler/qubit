@@ -132,6 +132,9 @@ body.__lock {
   color: #1C1C1C;
   font-size: 14px;
   line-height: 14px;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 .nav-list__link::after {
   --scale: 0;
@@ -150,6 +153,9 @@ body.__lock {
   transition: -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
   transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
   transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1), -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.nav-list__link:hover {
+  opacity: 1;
 }
 .nav-list__link:hover::after {
   --scale: 1;
@@ -906,6 +912,12 @@ body.__lock {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.footer-content-wrapper__block__list__link:hover {
+  opacity: 1;
 }
 
 .empty {
